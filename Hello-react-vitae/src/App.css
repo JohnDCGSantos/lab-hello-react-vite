@@ -1,42 +1,79 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.App {
+  font-family: "Roboto", sans-serif;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.toggle {
+  width: 40px;
+  height: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav * {
+  padding-top: 30px;
+}
+main {
+  padding: 10px 40px 80px 40px;
+  background: #5e81b7;
+  color: rgb(237, 228, 228);
+}
+
+main h1 {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+main p {
+  font-size: 20px;
+  max-width: 300px;
+  margin-top: -40px;
+  margin-bottom: 60px;
+}
+
+.content {
+  display: flex;
+  justify-content: flex-start;
+}
+
+button {
+  background-color: rgb(194, 87, 87);
+  padding: 20px;
+  color: #4d86db;
+  border-radius: 5px;
+  border: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card-panel {
+  padding: 20px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: aliceblue;
 }
 
 .card {
-  padding: 2em;
+  max-width: 200px;
+  margin: 20px;
 }
 
-.read-the-docs {
-  color: #888;
+.card-title {
+  font-size: 26px;
+  color: #3769b5;
+}
+
+.card p {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgb(88, 88, 88);
 }
